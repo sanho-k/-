@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>TRANSFORM</title> 
+</head> 
+<body>
+  <style>
+    p {
+      width: 120px; height: 120px;
+     background: rgba(71, 180, 38, 0.938);
+     text-align: center; line-height: 120px;
+     color: rgb(255, 255, 255);
+    }
+  </style>
+  <p>Original</p>
+  <!--이동 -->
+  <p class="t1">translate(30px,20px)</p>
+  <style>
+    .t1 {
+      transform: translate(30px,20px);
+      /* 부드러운 움직임 */
+      transition: transform 1s, background 1s;
+    }
+    .t1:hover {
+      background: rgb(214, 211, 47);
+      transform: translate(0,0);
+    } 
+  </style>
+  <p class="t2">rotate(60deg)</p>
+  <style>
+    .t2 {
+      transform: rotate(60deg);
+      /*변환되는 시간이 같으면 all로 통일 할 수 있음 */
+      transition: all 1s;
+      transition-timing-function: ease-in;
+    }
+    .t2:hover {
+      color: #000;
+      background: rgb(90, 255, 255);
+      transform: rotate(0);
+    } 
+  </style>
+  <p class="t3">scale(0.7, 1.3)</p>
+  <!-- scale 기준은 1 -->
+  <style>
+    .t3 {
+      transform: scale(0.7, 1.3);
+      transition: transform 1s;
+      transition-delay: 1s;
+    }
+    .t3:hover {
+      transform: scale(1,1);
+    } 
+  </style>
+  <p class="t4">skew(15deg, 10deg)</p>
+  <style>
+    .t4 {
+      transform: skew(15deg, 10deg);
+      transition: transform 1s;
+    }
+    .t4:hover {
+      transform: skew(0,0);
+    } 
+  </style>
+  <p class="t5">matrix(1, -0.1, 0, 1, 0, 0)</p>
+  <style>
+    .t5 {
+      transform: matrix(1, -0.1, 0, 1, 0, 0)
+      transition: transform 1s;
+    }
+    .t5:hover {
+      transform: matrix(1, -0.1, 0, 1, 0, 0)
+    } 
+  </style>
+
+
+
+
+</body> 
+</html>

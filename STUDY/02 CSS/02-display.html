@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>블록과 인라인</title> 
+<style type="text/css">
+    * {
+        list-style: none;
+    }
+	.gnb li { /*li가 a를 싸고있어서 가로정렬이 안먹히기 때문에 li에 먹여줘야함 inline-block(가로정렬)*/
+		display :inline-block
+	}
+	.gnb a {
+			display: inline-block;
+			background-color: rgb(255, 199, 199);
+			padding: 10px 15px;
+			color: aliceblue; }
+
+</style>
+
+</head> 
+<body>
+	<ul class="gnb">
+		<li><a href="#">Company</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Community</a></li>
+	</ul>
+
+	<div class="popup">
+		나는 팝업이다.
+	</div>
+
+	<style>
+		.popup {
+			display: block;
+			width: 150px; height: 150px;
+		background: rgb(255, 255, 255)235, 232, 232);
+		border: 1px solid #bbbbbb;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+		}
+	</style>
+
+</body> 
+</html>

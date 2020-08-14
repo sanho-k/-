@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>POSITION</title> 
+<link rel = "stylesheet" href = "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+<style type="text/css">
+/* 기본 reset */
+    * {
+        margin: 0; 
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;        
+    }
+    
+</style>
+</head> 
+<body>
+  <!-- 고정 gnb -->
+  <header>
+    <h1>유튜브</h1>
+  </header>
+  <style>
+    header {
+      position: fixed; top: 0;left: 0;right: 0;z-index: 9999;
+      height: 30px;
+      background: rgb(197, 197, 197);
+      text-align: center;
+      padding-top: 5px;
+    }
+  </style>
+  <div class="box2">box2</div>
+  <style>
+    /* 상대값이 없으면 브라우저를 기준으로 배치 */
+    .box2 {
+      position: absolute;bottom:0;left: 0;
+      width: 30px; height: 30px;
+      background-color: rgb(255, 181, 181);
+      border-radius: 50%;
+    }
+  </style>
+  <div class="box">
+    <iframe width="700px" height="500px" src="https://youtu.be/U8b_hirAtfQ" frameborder="0"></iframe>
+  <a href="#" class="btn- btn-pre"> <i class="las la-angle-left"></i> <span class="blind">이전 동영상</span> </a>
+	<a href="#" class="btn- btn-next"><i class="las la-angle-right"></i> <span  class="blind" >다음 동영상</span> </a>
+  
+  <p class="txt">팝송 모음</p>
+</div>
+  <style>
+    /* 부모()에게 마우스 올렸을 때 class txt 뜨는 작업 */
+    .box:hover .txt {
+      opacity: 0;
+    }
+    .txt {
+      display: none;
+      position: absolute;top: 0;left: 0;bottom: 0;right: 0;
+      background: rgba(0,0,0,0.8);
+      color: rgb(255, 255, 255);
+      text-align: center; padding-top: 240px;
+      opacity: 1;
+    }
+    .btn- {
+      position: absolute;top: 50%;z-index: 100;
+      margin-top: -12px;
+      color: rgb(255, 255, 255);
+      width: 50px; height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.157);
+    text-align: center; padding: 10px 0 0 4px;
+    }
+    .blind {
+      display: inline-block;
+      text-indent: -9999px;
+      font-size: 0; 
+    }
+    .btn-pre {
+    position: absolute; left: 10px;
+    }
+    .btn-next {
+    position: absolute; right: 10px;
+    }
+  .box i {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+  }
+   .box { 
+     position: relative;
+     width: 700px; height: 500px;
+     margin: 30px auto;
+     background: rgb(41, 41, 41);
+     }
+
+  </style>
+</body> 
+</html>

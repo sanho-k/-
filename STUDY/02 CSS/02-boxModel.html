@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>BoxModel</title> 
+<style type="text/css">
+    
+</style>
+</head> 
+<body>
+    <h1>Boxmodel</h1>
+  <div class="width">
+        <div class="w1">block</div>
+        <span class="w2">inline</span>
+        <span class="w3">inline-block</span>
+
+  </div>
+
+  <style>
+      .width {
+        width: 50%;
+        border: 1px solid #000;
+      }
+      .width .w1 {
+          border: 1px solid rgb(255, 197, 197);
+          }
+      .width .w2 {
+          border: 1px solid rgb(156, 182, 255);
+          }
+      .width .w3 {
+          display: inline-block;
+          border: 1px solid rgb(113, 60, 236);
+          }
+
+  </style>
+  
+  <br><br><br>
+  <hr>
+  
+  <h2>Maxwidth & Minwidth</h2>
+    <div class="box box1">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum, enim ratione cum cupiditate, impedit ipsa sapiente modi nisi commodi vero et soluta amet sint aliquam ab maxime doloremque sit?
+   </div>
+   <div class="box box2">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum, enim ratione cum cupiditate, impedit ipsa sapiente modi nisi commodi vero et soluta amet sint aliquam ab maxime doloremque sit?
+   </div>
+   <div class="box box3">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum, enim ratione cum cupiditate, impedit ipsa sapiente modi nisi commodi vero et soluta amet sint aliquam ab maxime doloremque sit?
+   </div>
+   <div class="box box4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum, enim ratione cum cupiditate, impedit ipsa sapiente modi nisi commodi vero et soluta amet sint aliquam ab maxime doloremque sit?
+</div>
+   <hr>
+   <style>
+      .box {
+        width: 100%;
+        background-color: rgb(152, 248, 255);
+         }
+
+        .box2 {
+        max-width: 500px;
+        background-color: rgb(101, 160, 255);
+       }
+
+       .box3 {
+        min-width: 400px;
+        background-color: rgb(185, 124, 255);
+       }
+
+       .box4 {
+        width: 100%;
+        max-width: 600px;
+        min-width: 400px;
+        background-color: rgb(155, 204, 212);
+       }
+
+      
+       .padding {
+           width: 478px;
+           border: 1px solid red;
+           padding: 50px 10px 10px 10px;
+       }  
+       
+       .padding.boxsizing {
+           box-sizing: border-box;
+       }
+</style>
+<br><br><br>
+<hr>
+
+<br>
+<h2>Padding</h2>
+<br>
+    <a href="#" class="link-g link-naver">네이버 바로가기</a>
+    <a href="#" class="link-g link-cancle">취소</a>
+    
+   <br><br>
+    <h2>Padding-boxsizing</h2>
+    <br>
+    
+    <div class="padding">
+        드디어 섭씨 40도가 넘었다. 엄마 뱃속보다 뜨거운 날씨, 감사해야 할까? 해가 뜨거울 뿐인데 오존층이 파괴되어 오존주의보가 발령되었다.
+    </div>
+    <br>
+    <div class="boxsizing">
+        드디어 섭씨 40도가 넘었다. 엄마 뱃속보다 뜨거운 날씨, 감사해야 할까? 해가 뜨거울 뿐인데 오존층이 파괴되어 오존주의보가 발령되었다.
+    </div>
+ 
+ <style>   
+    /*w:400px;, h:100px; 박스가 만들어짐*/
+.padding {
+    width: 336px; height: 76px;
+    border: 2px solid rgb(95, 184, 36);
+    padding: 10px 30px;}
+
+.boxsizing {
+    width: 400px; height: 100px;
+    border: 2px solid rgb(31, 108, 153);
+    padding: 10px 30px;
+    box-sizing: border-box;
+    }
+</style>
+
+ 
+ <style>
+      .link-g {
+        color: #ffffff;
+    padding: 5px 10px;
+    }
+.link-naver {
+    padding: 5px 10px;
+    background: rgb(20, 230, 114);
+    border: 1px solid rgb(40, 131, 63);
+}
+.link-cancle {
+    background: rgb(211, 211, 211);
+    border: 1px solid rgb(104, 104, 104);
+}
+  </style>
+
+    <hr>
+    <h2>Margin</h2>
+    <style>
+        .margin {
+            background: lightblue;
+            padding: 20px;
+            margin: 50px;
+        }
+        .margin2 {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+    <p class="margin margin1">유래없이 뜨거운 날씨이다. 섭씨 38도를 웃도는 온도에서 에어콘은 이제 살기 위한 도구가 되었다.</p>
+    <p class="margin margin2">달걀을 사다 놓기만 해도 병아리로 부화된다는 농담같은 이야기가 현재 대한민국의 실화다.</p>
+    <p class="margin margin3">드디어 섭씨 40도가 넘었다. 엄마 뱃속보다 뜨거운 날씨, 감사해야 할까? 해가 뜨거울 뿐인데 오존층이 파괴되어 오존주의보가 발령되었다.</p>
+
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+.margin {
+    width: 60%;
+    background-color: rgb(254, 255, 202);
+    padding: 10px;
+}
+.margin.margin1 {
+    margin: 10px;
+}
+.margin.margin2 {
+    margin: 50px 10px 50px;
+}
+.margin.margin3 {
+    /*가운데 정렬*/
+    margin: 0 auto 100px;
+}
+    </style>
+
+
+</body> 
+</html>

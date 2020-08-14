@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자:CSS</title>
+</head>
+<body>
+    <h1>css</h1>
+    <h2>선택자</h2>
+    <h1>로고</h1>
+    <p>css를 선택하는 방법</p>
+
+<style>
+   
+        h1{color: rgb(255, 168, 168);
+            font-size: 20px;}
+        p{color: #fff;
+          background: rgb(158, 187, 255);
+          font-size: 16px;}
+     <!-- p태그를 선택해서 
+        폰트는 화이트, 배경 blue, 폰트 사이즈 16px-->  
+    </style>
+<style>
+ul{background: rgb(158, 187, 255);}
+li{background: rgb(255, 239, 197);}
+a{background: rgb(212, 193, 255);}
+
+/* 자식선택 > */
+/*id는 #, class는 .*/
+#list > li {border: 1px solid #000;}
+/*depth2의 자손 중 a태그 선택 */
+.depth2 a {color: rgb(255, 50, 50);}
+/*중복선택*/
+#list > li, .depth2 li{padding: 5px;}
+</style>
+    <h2>자식선택</h2>
+    <ul id="list">
+    <li>
+     <a href="#">menu1</a>
+     <ul class="depth2">
+         <li>
+         <a href="#">menu1-1</a>
+         </li>
+         <li>
+         <a href="#">menu1-2</a>
+         </li>
+         <li>
+         <a href="#">menu1-3</a>
+         </li>
+         </ul>
+    <li>
+     <a href="#">menu2</a>
+     <ul class="depth2">
+         <li>
+         <a href="#">menu2-1</a>
+         </li>
+         <li>
+         <a href="#">menu2-2</a>
+         </li>
+         <li>
+         <a href="#">menu2-3</a>
+         </li>
+         </ul>
+    <li>
+     <a href="#">menu3</a>
+     <ul class="depth2">
+         <li>
+         <a href="#">menu3-1</a>
+         </li>
+         <li>
+         <a href="#">menu3-2</a>
+         </li>
+         <li>
+         <a href="#">menu3-3</a>
+         </li>
+     </ul>
+     </li>
+     </ul>
+
+
+</body>
+</html>

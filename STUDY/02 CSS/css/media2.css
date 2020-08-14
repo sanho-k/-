@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+margin: 0; padding: 0;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+list-style: none;
+}
+/* 모바일 버전 */
+.wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 8%;
+    background: rgb(255, 250, 179);
+
+}
+.container {
+    /* 나머지 영역을 꽉 채움 */
+    flex-grow: 1;
+    background: rgb(241, 241, 241);
+}
+footer {
+    height: 10%;
+    background: rgb(174, 255, 180);
+}
+
+/* PC버전 */
+/* 480 < width < 100% */
+@media screen and (min-width: 480px) {
+    .wrap {
+        position: relative;
+        padding-left: 130px;
+    }
+    .container {
+     }
+  header {
+      position: absolute;
+      left: 0;top: 0;
+      width: 130px;
+      height: 100vh;
+  }
+  }

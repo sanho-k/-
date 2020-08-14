@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>TRANSITION</title> 
+<style type="text/css">
+    * {
+        margin: 0; 
+        padding: 0; 
+        font-size: 14px; 
+        color: #333;
+        line-height: 1.5;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+</style>
+</head> 
+<body>
+      <h1>TRANSITION</h1>
+      <h2>float 이용한 그리드 맞추기</h2>
+      <div class="wrap-m">
+        <ul class="menu">
+          <li><a href="#">Company</a></li>
+          <ul>
+          
+              <li><a href="#">menu1</a></li>
+              <li><a href="#">menu2</a></li>
+              <li><a href="#">menu3</a></li>
+        
+          </ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Customer</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <style>
+        .menu {
+          overflow: hidden;
+        }
+        .wrap-m {
+          margin: 0 -1%;
+        }
+        .menu li {
+          float: left;
+          width: 20%;
+          padding: 0 1%;
+        }
+        .menu a {
+          display: block;
+          width: 100%; height: 30px; 
+          line-height: 30px;
+          background: lightblue;
+          text-align: center;
+        }
+      </style>
+<br>
+<h2>flex 이용한 그리드 맞추기</h2>
+<ul class="menu2">
+  <li><a href="#">Company</a></li>
+  <li><a href="#">Product</a></li>
+  <li><a href="#">Service</a></li>
+  <li><a href="#">Customer</a></li>
+  <li><a href="#">Community</a></li>
+</ul>
+<style>
+  .menu2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu2 li {
+    position: relative;
+    width: 19%;  height: 30px; 
+    
+  }
+  .menu2 a {
+    background: lightblue;
+    text-align: center; line-height: 30px;
+    color: rgb(255, 255, 255);
+    display: block; 
+    /*컬러 값은 무조건 텍스트를 감싸고 있는 태그에 넣기 */
+  }
+</style>
+</body> 
+</html>

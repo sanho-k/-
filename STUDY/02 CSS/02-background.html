@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background:css</title>
+</head>
+<body>
+    <h1>Background</h1>
+
+    <h2>Background color</h2>
+
+    <p class="bg-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti blanditiis itaque laudantium eius repudiandae quisquam vel vero nihil quae sit nam fugit, labore cum quos placeat animi pariatur numquam.</p>
+    
+    <style>
+        .bg-c {
+            background-color: rgba(130,255,201,.5);
+             }
+    </style>
+    
+    <h2>background-image</h2>
+    <h1 class="w3logo">w3schools.com</h1>
+
+    <style>
+        .w3logo {
+            width: 100%; height: 60px;
+            background-image: url(./images/logo.png);
+            text-indent:-9999px ;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <h2>Background-position</h2>
+    <div class="box">
+        
+
+    </div>
+<style>
+    .box {
+        width: 700px;height: 700px;
+        background-image: url(./images/image.jpg);
+        background-repeat: no-repeat;
+        background-color: #dddddd;
+        background-position: 50% 0;
+    }
+</style>
+<br><br>
+
+<a href="#" class="logo-naver">NAVER</a>
+
+<style>
+.logo-naver {
+display: block;
+width: 442px; height: 106px;
+background-image: url(./images/img-comm.png);
+background-repeat: no-repeat;
+background-position: 0 0;
+text-indent: -9999px;
+}
+</style>
+
+<br>
+
+<a href="#" class="link-dark">다크 모드로 보기</a>
+<style>
+.link-dark {
+    display: block;
+    width: 260px; height: 90px;
+    background-image: url(./images/sp_main.png);
+    background-repeat: no-repeat;
+    background-position: -558px -120px;
+    text-indent: -9999px;
+}
+</style>
+
+<a href="#" class="img-g pre-grey">회색 이전버튼</a>
+<a href="#" class="img-g post-grey">회색 다음버튼</a>
+
+<style>
+    .img-g {
+        display: block;
+    width: 69px; height: 69px;
+    background-image: url(./images/img-comm.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    }
+ .pre-grey {
+    background-position: 0 -109px;
+    }
+
+.post-grey {
+ background-position: -71px -109px;
+}
+
+
+
+</style>
+
+<h2>Background-attachment</h2>
+<div class="bg-atta"></div>
+
+<style>
+.bg-atta {
+    background-image: url(./images/map.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%; height: 100px;
+}
+
+</style>
+
+
+
+
+<h2>Background-size</h2>
+<h3>1.defult (원래 사이즈 그대로 보여짐)</h3>
+<a href="#" class="ban">
+<strong> 네이버 해피빈</strong>
+ 해피빈 펀딩 참여하면 기부콩 3천원! 이번 주 오픈 펀딩은?
+</a>
+
+<h3>2.contain (모든 배경이미지가  보임)</h3>
+<a href="#" class="ban ban-contain">
+    <strong> 네이버 해피빈</strong>
+    해피빈 펀딩 참여하면 기부콩 3천원! 이번 주 오픈 펀딩은?
+   </a>
+ <h3>3.cover (배경이미지가 꽉 참)</h3>
+<a href="#" class="ban ban-cover">
+    <strong> 네이버 해피빈</strong>
+ 해피빈 펀딩 참여하면 기부콩 3천원! 이번 주 오픈 펀딩은?
+</a>
+
+<h3>4. 절대값 (px)</h3>
+<a href="#" class="ban ban-px">
+    <strong> 네이버 해피빈</strong>
+ 해피빈 펀딩 참여하면 기부콩 3천원! 이번 주 오픈 펀딩은?
+</a>
+
+<h3>5. 상대값 (%)</h3>
+<a href="#" class="ban ban-per">
+    <strong> 네이버 해피빈</strong>
+ 해피빈 펀딩 참여하면 기부콩 3천원! 이번 주 오픈 펀딩은?
+</a>
+
+<style>
+.ban-per {background-size: 50% auto;}
+.ban-px {background-size: 300px 300px;}
+.ban-cover {background-size: cover;}
+.ban-contain {background-size: contain;}
+.ban {
+    display: block;
+    width: 100%; height: 100px;
+    background-image: url(./images/ban.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-indent: -9999px;
+    background-color: rgb(242, 255, 172);
+}
+
+
+</style>
+
+<h2>Background-shorthand</h2>
+<div class="bg-short"></div>
+
+<style>
+.bg-short {
+   background: #bfffbf url(./images/map.jpg;) no-repeat -100px -200px;
+
+}
+</style>
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
